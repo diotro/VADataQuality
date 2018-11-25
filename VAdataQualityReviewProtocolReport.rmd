@@ -25,7 +25,8 @@ This protocol / report is produced as part of the Bloomberg Philantropies Data f
 The following will import the data that was exported using ODK Briefcase or dirctly downloaded from ODK Aggregate
 -->
 ```{r data_import, include=FALSE}
-VAdata<-read.csv("C:/Users/Martin/My SecuriSync/D4H/CRVS component/Country Implementation Files/Bangladesh/03. Implementation/VA/Results/20180828/SmartVA_Bangla_v3.csv", header=TRUE,stringsAsFactors=FALSE)
+VAdata<-read.csv("https://raw.githubusercontent.com/verbal-autopsy-software/VADataQuality/master/MockData/2016_WHO_Verbal_Autopsy_Form_1_5_1_results.csv", header=TRUE,stringsAsFactors=FALSE)
+VAdataPHMRC<-read.csv("https://raw.githubusercontent.com/verbal-autopsy-software/VADataQuality/master/MockData/PHMRC_Shortened_Instrument_8_20_2015_results.csv", header=TRUE,stringsAsFactors=FALSE)
 ```
 
 ## General Information about the Data Analyzed
