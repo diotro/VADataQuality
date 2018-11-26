@@ -42,7 +42,11 @@ dim(VAdata)
 The following will create new and re-named variables as needde for data quality reveiw (when using the WHO questionniare).
 -->
 ```{r column_rename_WHO, include=FALSE}
-#
+#ReNaming variables (this is required to ensure that the belwo runs smoothly and to make sure that the column names make more sense)
+#Use the ColumnReName.xlsx to write the code for this.
+#names(VAdata)
+VAdata$presets.Id10002_ReName<-VAdata$presets.Id10002 ; colnames(VAdata)[colnames(VAdata)=="presets.Id10002_ReName"]<-"HIV/AidsRate.Id10002"
+VAdata$presets.Id10003_ReName<-VAdata$presets.Id10003 ; colnames(VAdata)[colnames(VAdata)=="presets.Id10003_ReName"]<-"MalariaRate.Id10003"
 ```
 
 <!--
